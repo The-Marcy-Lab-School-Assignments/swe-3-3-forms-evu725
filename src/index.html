@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NYC Tech Summit 2026</title>
+</head>
+<body>
+    <h1>NYC Tech Summit 2026</h1>
+    <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+    <form>
+        <!-- Form's title -->
+        <h2>Event RSVP</h2>
+        <!-- Label/User input -->
+         <div>
+            <label>First Name</label>
+            <input type="text"/>
+         </div>
+         <div>
+            <label>Last Name</label>
+            <input type="text"/>
+         </div>
+         <div>
+            <label>Email</label>
+            <input type="email"/>
+         </div>
+         <div>
+            <label>Number of Tickets</label>
+            <input type="number" min="1" max="10"/>
+         </div>
+
+        <!-- Radio buttons (pick ONE option) -->
+        <fieldset>
+        <legend>Lunch Preference</legend>
+        <div>
+            <input type="radio" id="lunch-chicken" name="status" value="chicken" />
+            <label for="status-applied">Chicken</label>
+        </div>
+        <div>
+            <input type="radio" id="lunch-fish" name="status" value="fish" />
+            <label for="status-interview">Fish</label>
+        </div>
+        <div>
+            <input type="radio" id="lunch-veg" name="status" value="veg" />
+            <label for="status-offer">Vegetarian</label>
+        </div>
+        </fieldset>
+
+        <!-- Checkbox (yes/no, on/off) -->
+        <div>
+            <fieldset>
+            <legend>Select Workshop Sessions (Check all that apply)</legend>
+                <label><input type="checkbox" name="session" value="session1"> Session 1</label>
+                <label><input type="checkbox" name="session" value="session2"> Session 2</label>
+                <label><input type="checkbox" name="session" value="session3"> Session 3</label>
+                <label><input type="checkbox" name="session" value="session4"> Session 4</label>
+                <label><input type="checkbox" name="session" value="session5"> Session 5</label>
+            </fieldset>
+        </div>
+
+        <!-- Long text -->
+         <div>
+            <label for="notes">Notes</label>
+            <textarea id="notes" rows="5" cols="40" placeholder="Interview prep, follow-up reminders, etc." name="notes"></textarea>
+        </div>
+        <button type="submit">Complete RSVP</button>
+    </form>
+    <footer id="footer">Copyright © 2026 NYC Tech Summit</footer>
+</body>
+</html>
