@@ -13,23 +13,26 @@
         <!-- Form's title -->
         <h2>Event RSVP</h2>
         <!-- Label/User input -->
-         <div>
-            <label>First Name</label>
-            <input type="text"/>
+         <div class="form-row">
+            <div class="form-field">
+                <label>First Name</label>
+                <input type="text"/>
+            </div>
+            <div class="form-field">
+                <label>Last Name</label>
+                <input type="text"/>
+            </div>
          </div>
-         <div>
-            <label>Last Name</label>
-            <input type="text"/>
-         </div>
-         <div>
-            <label>Email</label>
-            <input type="email"/>
-         </div>
-         <div>
-            <label>Number of Tickets</label>
-            <input type="number" min="1" max="10"/>
-         </div>
-
+         <div class="form-row">
+            <div class="form-field">
+                <label>Email</label>
+                <input type="email"/>
+            </div>
+            <div class="form-field">
+                <label>Number of Tickets</label>
+                <input type="number" min="1" max="10"/>
+            </div>
+        </div>
         <!-- Radio buttons (pick ONE option) -->
         <fieldset>
         <legend>Lunch Preference</legend>
@@ -49,20 +52,22 @@
 
         <!-- Checkbox (yes/no, on/off) -->
         <div>
-            <fieldset>
-            <legend>Select Workshop Sessions (Check all that apply)</legend>
-                <label><input type="checkbox" name="session" value="session1"> Session 1</label>
-                <label><input type="checkbox" name="session" value="session2"> Session 2</label>
-                <label><input type="checkbox" name="session" value="session3"> Session 3</label>
-                <label><input type="checkbox" name="session" value="session4"> Session 4</label>
-                <label><input type="checkbox" name="session" value="session5"> Session 5</label>
+            <fieldset class="radio-group">
+                <legend>Select Workshop Sessions (Check all that apply)</legend>
+                <div class="radio-option">
+                    <label><input type="checkbox" name="session" value="session1"> Session 1</label>
+                    <label><input type="checkbox" name="session" value="session2"> Session 2</label>
+                    <label><input type="checkbox" name="session" value="session3"> Session 3</label>
+                    <label><input type="checkbox" name="session" value="session4"> Session 4</label>
+                    <label><input type="checkbox" name="session" value="session5"> Session 5</label>
+                </div>
             </fieldset>
         </div>
 
         <!-- Long text -->
-         <div>
-            <label for="notes">Notes</label>
-            <textarea id="notes" rows="5" cols="40" placeholder="Interview prep, follow-up reminders, etc." name="notes"></textarea>
+        <div class="form-field">
+            <label for="notes">Special Requests or Notes</label>
+            <textarea id="notes" rows="5" cols="40" placeholder="Dietary, restrictions, accessibility needs, questions, etc." name="notes"></textarea>
         </div>
         <button type="submit">Complete RSVP</button>
     </form>
