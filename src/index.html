@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NYC Tech Summit 2026</title>
+</head>
+<body>
+    <header>
+        <h1>NYC Tech Summit 2026</h1>
+        <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+    </header>
+    <main>
+        <form>
+            <!-- Form's title -->
+            <h2>Event RSVP</h2>
+            <!-- Label/User input -->
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName"/>
+                </div>
+                <div class="form-field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-field">
+                    <label for="tickets">Number of Tickets</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10">
+                </div>
+            </div>
+
+            <!-- Radio buttons (pick ONE option) -->
+            <fieldset>
+                <legend>Lunch Preference</legend>
+                <div>
+                    <input type="radio" id="lunch-chicken" name="lunch" value="chicken" />
+                    <label for="lunch-chicken">Chicken</label>
+                </div>
+                <div>
+                    <input type="radio" id="lunch-fish" name="lunch" value="fish" />
+                    <label for="lunch-fish">Fish</label>
+                </div>
+                <div>
+                    <input type="radio" id="lunch-veg" name="lunch" value="veg" />
+                    <label for="lunch-veg">Vegetarian</label>
+                </div>
+            </fieldset>
+
+            <!-- Checkbox (yes/no, on/off) -->
+            <fieldset class="radio-group">
+                <legend>Select Workshop Sessions (Check all that apply)</legend>
+                
+                <div class="radio-option">
+                    <label><input type="checkbox" name="session" value="session1"> Session 1</label>
+                    <label><input type="checkbox" name="session" value="session2"> Session 2</label>
+                    <label><input type="checkbox" name="session" value="session3"> Session 3</label>
+                    <label><input type="checkbox" name="session" value="session4"> Session 4</label>
+                    <label><input type="checkbox" name="session" value="session5"> Session 5</label>
+                </div>
+            </fieldset>
+
+            <!-- Long text -->
+            <div class="form-field">
+                <label for="notes">Special Requests or Notes</label>
+                <textarea id="notes" rows="5" cols="40" placeholder="Dietary, restrictions, accessibility needs, questions, etc." name="notes"></textarea>
+            </div>
+            <button type="submit">Complete RSVP</button>
+        </form>
+    </main>
+    <footer id="footer">Copyright © 2026 NYC Tech Summit</footer>
+</body>
+</html>
