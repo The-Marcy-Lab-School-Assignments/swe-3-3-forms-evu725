@@ -7,23 +7,27 @@ Answer the following questions in your own words. Each response should be 2-4 se
 What is accessibility and why does it matter? Name at least two ways that labels make our form inputs more accessible?
 
 **Your Answer:**
-Accessibility is its usability, making things simple for everyone. Two ways that labels make for form inputs more accessible is when image doesn't load one the website, it gives an alterative text instead showing what the content of image suppose to be shown. 
+Accessibility is creating digital experiences to the needs of all users, including those with disabilities. It is important because it helps people with different abilities easily find the information they need without becoming overwhelmed or having to spend extra time navigating website components.
+
+Labels make form inputs more accessible by telling users what information is expected in each field. They also make forms easier to use by allowing users to click the label text to select or focus the input.
 
 ## Question 2: The `name` vs `id` Attribute
 
 `for`, `name` and `id` are attributes we put on form labels and inputs, but they serve different purposes. Explain what each attribute is used for.
 
 **Your Answer:**
-- The `for` attribute is used in labels. It refers to the id of the elements the label is in is associated with.  
-- The `name` attribute is used for identifying the input value. 
-- The `id` attribute is used for unique attribute.
+- The `for` attribute is used on a `<label>` element. It connects the label to an input by matching the label's `for` value with the input's `id`. This allows users to click the label to focus on the input and helps assistive technologies identify the correct label for each field.
+- The `name` attribute identifies the input when the form is submitted. It tells the server which field the submitted value belongs to.
+- The `id` attribute provides a unique identifier for an HTML element. It is used by the label's for attribute to link the label to the correct input field.
 
 ## Question 3: Input Types
 
 Why do we use specific input types like `type="email"` or `type="number"` instead of just using `type="text"` for everything? What advantages do they provide?
 
 **Your Answer:**
-Using specific input types makes inputs meaningful than using `type="text"` for everything. The advantages it has is checking for data validation and help guide user what type of input is expected. 
+Using specific input types like `type="email"` or `type="number"` is better than using `type="text"` because they define what type of information the input expects, helping users enter the correct data format.
+
+The advantages they provide include built-in browser validation to check for incorrect input and helping users with assistive technologies better understand what information should be entered. They also provide a better user experience through features like mobile keyboards that match the type of information being entered and give clearer meaning to browsers and developers.
 
 ## Question 4: Form Submission
 
